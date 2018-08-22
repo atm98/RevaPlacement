@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Fragments.TakeTest"
+    android:layout_margin="5dp">
+
+
+    <ScrollView
+        android:layout_width="368dp"
+        android:layout_height="551dp"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/test_aptitude_button"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+
+                android:layout_weight="1"
+                android:text="Test your Aptitude Skills" />
+
+            <android.support.v7.widget.GridLayout
+                android:id="@+id/grid_icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:columnCount="3">
+
+                <LinearLayout
+                    android:id="@+id/l1"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/icon_image_1"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="110dp"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/colorAccent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/company_info" />
+
+                    <TextView
+                        android:id="@+id/icon_text_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Company Information"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/l2"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/icon_image_2"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="110dp"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/colorAccent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/quant" />
+
+                    <TextView
+                        android:id="@+id/icon_text_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Quantitative Aptitude"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/l3"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/icon_image_3"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="110dp"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/colorAccent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/logical" />
+
+                    <TextView
+                        android:id="@+id/icon_text_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Logical Reasoning"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/l4"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/icon_image_4"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="110dp"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/colorAccent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/softskills" />
+
+                    <TextView
+                        android:id="@+id/icon_text_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Soft Skills"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/l5"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/icon_image_5"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="110dp"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/colorAccent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/groupdiscussion" />
+
+                    <TextView
+                        android:id="@+id/icon_text_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Group Discussion"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/l6"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/icon_image_6"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="110dp"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/colorAccent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/verbalskills" />
+
+                    <TextView
+                        android:id="@+id/icon_text_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Verbal Skills"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/l7"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/icon_image_7"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="110dp"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/colorAccent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/technical" />
+
+                    <TextView
+                        android:id="@+id/icon_text_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Technical"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/l8"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/icon_image_8"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="110dp"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/colorAccent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/hrround" />
+
+                    <TextView
+                        android:id="@+id/icon_text_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="HR Round"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/l9"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/icon_image_9"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="110dp"
+                        android:layout_margin="5dp"
+                        android:backgroundTint="@color/colorAccent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/resume" />
+
+                    <TextView
+                        android:id="@+id/icon_text_9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Resume"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.GridLayout>
+
+            <Button
+                android:id="@+id/daily_test_button"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="Daily Test" />
+
+            <Button
+                android:id="@+id/placement_paper_button"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="Placement Papers" />
+        </LinearLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

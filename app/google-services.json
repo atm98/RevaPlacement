@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "501020904408",
+    "firebase_url": "https://placementapp-bfc09.firebaseio.com",
+    "project_id": "placementapp-bfc09",
+    "storage_bucket": "placementapp-bfc09.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:501020904408:android:dfd116db0a1885b3",
+        "android_client_info": {
+          "package_name": "com.agnt45.revaplacement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "501020904408-1c17sd9hkr0hv8ve1pli8fn9hqm6e8v2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.agnt45.revaplacement",
+            "certificate_hash": "11cd1d8bf373d2b1782d57f4f2270554e8c80450"
+          }
+        },
+        {
+          "client_id": "501020904408-mn23ivdmfab0mu9n6hplbv23k68k6ect.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFAVt7Sd2NonJ1ku0aYwcsnQebHPh48gc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "501020904408-mn23ivdmfab0mu9n6hplbv23k68k6ect.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
