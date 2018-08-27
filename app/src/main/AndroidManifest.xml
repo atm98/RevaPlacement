@@ -27,7 +27,13 @@
         <activity android:name=".Activities.RegisterScreen" />
         <activity android:name=".Activities.VerificationCheckScreen" />
         <activity android:name=".Activities.IconScreen" />
-        <activity android:name=".Activities.TestScreen"></activity>
+        <activity android:name=".Activities.TestScreen" />
+        <activity android:name=".Activities.ResultScreen" />
+        <activity android:name=".Activities.ProfileScreen"></activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
     </application>
 
 </manifest>

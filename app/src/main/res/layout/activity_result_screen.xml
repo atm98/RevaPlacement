@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ResultScreen">
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginRight="59dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="109dp"
+        android:text="10/10"
+        android:textSize="100sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/correct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="122dp"
+        android:layout_marginLeft="122dp"
+        android:layout_marginRight="122dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="19dp"
+        android:text="50 Correct"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/score" />
+
+    <TextView
+        android:id="@+id/incorrect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="112dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginRight="112dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="17dp"
+        android:text="50 Incorrect"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correct" />
+
+    <Button
+        android:id="@+id/reteke_test"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="62dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="96dp"
+        android:text="RETAKE TEST"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/incorrect" />
+
+    <Button
+        android:id="@+id/submit_upload"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="62dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="96dp"
+        android:text="FINISH TEST UPLOAD SCORE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/reteke_test"
+        app:layout_constraintTop_toBottomOf="@+id/incorrect" />
+</android.support.constraint.ConstraintLayout>

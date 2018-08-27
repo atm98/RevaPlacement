@@ -41,6 +41,7 @@ public class CommentAdapter extends FirestoreRecyclerAdapter<Comment
     protected void onBindViewHolder(@NonNull final CommentViewHolder holder, final int position, @NonNull final Comment model) {
         holder.commentUserName.setText(model.getCommentUsername());
         holder.commentMessage.setText(model.getCommentMessage());
+        Picasso.get().load(model.getCommentUserpic()).into(holder.picUser);
         if(!(model.getCommentUserpic() ==null)){
             Picasso.get().load(model.getCommentUserpic()).into(holder.picUser);
         }

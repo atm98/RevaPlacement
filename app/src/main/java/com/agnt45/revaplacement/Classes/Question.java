@@ -3,30 +3,34 @@ package com.agnt45.revaplacement.Classes;
 import java.util.ArrayList;
 
 public class Question{
-    String QuestionText;
-    String[] OptionList;
-    public Question(String QuestionText, String[] OptionList) {
-        this.QuestionText = QuestionText;
-        this.OptionList = OptionList;
+    public Question(String questionText, ArrayList<String> optionArray) {
+        this.questionText = questionText;
+        this.optionArray = optionArray;
+    }
+
+    public Question() {
+        //Empty Constructor
     }
 
     public String getQuestionText() {
-        return this.QuestionText;
+        return questionText;
     }
 
-    public void setQuestionText(String QuestionText) {
-        this.QuestionText = QuestionText;
+    public void setQuestionText(String questionText) {
+        this.questionText = questionText;
     }
 
-    public String[] getOptionList() {
-        return this.OptionList;
+    public ArrayList<String> getOptionArray() {
+        return optionArray;
     }
 
-    public void setOptionList(String[] OptionList) {
-        this.OptionList = OptionList;
+    public void setOptionArray(ArrayList<String> optionArray) {
+        this.optionArray = optionArray;
     }
 
+    String questionText;
+    ArrayList<String> optionArray;
 
-    public Question() {
-    }
+
+
 }

@@ -28,6 +28,7 @@ public class HomeScreen extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.home_bottom_nav);
         frameLayout = findViewById(R.id.display_layout);
         toolbar = findViewById(R.id.toolbar_home);
+        getSupportFragmentManager().beginTransaction().add(R.id.display_layout,new ViewCards()).commit();
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {

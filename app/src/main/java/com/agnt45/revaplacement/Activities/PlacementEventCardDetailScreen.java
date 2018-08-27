@@ -93,6 +93,7 @@ public class PlacementEventCardDetailScreen extends AppCompatActivity {
             commentsRecyclerView.setVisibility(View.GONE);
             commentLayout.setVisibility(View.GONE);
         }
+        user_pic=findViewById(R.id.pic_comment_user);
         duration = findViewById(R.id.duration_since_posting_detail);
         desc = findViewById(R.id.desc_placement_event_detail);
         links = findViewById(R.id.links_placement_event_detail);
@@ -100,6 +101,7 @@ public class PlacementEventCardDetailScreen extends AppCompatActivity {
         like = findViewById(R.id.like_button_detail);
         comment = findViewById(R.id.comment_button_detail);
         share = findViewById(R.id.share_button_detail);
+        Picasso.get().load(user.getPhotoUrl()).into(user_pic);
         comment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -115,7 +117,7 @@ public class PlacementEventCardDetailScreen extends AppCompatActivity {
                     Map<String,Object> commentData = new HashMap<>();
                     commentData.put("commentMessage",comment_message.getText().toString());
                     commentData.put("commentUsername",FirebaseAuth.getInstance().getCurrentUser().getDisplayName());
-                    commentData.put("commentUserpic",FirebaseAuth.getInstance().getCurrentUser().getPhotoUrl());
+                    commentData.put("commentUserpic",user.getPhotoUrl().toString());
                     commentData.put("commentUseruid",FirebaseAuth.getInstance().getCurrentUser().getUid());
 
 

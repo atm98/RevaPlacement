@@ -41,7 +41,9 @@ public class TakeTest extends Fragment {
         dailytest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               startActivity(new Intent(getActivity(), TestScreen.class));
+                Intent intent =new Intent(getActivity(), TestScreen.class);
+                intent.putExtra("TestType","DailyTest");
+                startActivity(intent);
             }
         });
         takeTest.setOnClickListener(new View.OnClickListener() {

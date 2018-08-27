@@ -26,14 +26,37 @@
             android:text="TextView"
             android:textSize="18sp" />
 
-        <LinearLayout
+        <RadioGroup
             android:id="@+id/options"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
 
-        </LinearLayout>
+            <RadioButton
+                android:id="@+id/option1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+
+            <RadioButton
+                android:id="@+id/option2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+
+            <RadioButton
+                android:id="@+id/option3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+
+            <RadioButton
+                android:id="@+id/option4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+        </RadioGroup>
 
         <Button
             android:id="@+id/next_button"
